@@ -1,6 +1,6 @@
 
 * {
-  font-family: arial, sans-serif;
+  font-family: 'Courier New', Courier, monospace;
   margin: 0;
 }
 
@@ -14,6 +14,8 @@ body > div {
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  position: relative;
 }
 
 #container > div {
@@ -21,8 +23,15 @@ body > div {
 }
 
 #navbar {
+  align-items: flex-end;
   padding: 2em;
   justify-content: space-evenly;
+  position: absolute;
+  bottom: 0px;
+  width: 95%;
+  border: 2px black solid;
+  border-radius: 10px;
+  background-color: rgb(230, 224, 224);
 }
 
 #main-section {
@@ -46,6 +55,27 @@ body > div {
   color: white;
 }
 
+.purple {
+  background-color: purple;
+  color: white;
+}
+
 .home{
   background-color: #eebceee1;
+}
+
+.link {
+  border: 2px solid black;
+  padding: 5px;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  border-radius: 10px;
+}
+
+.link:hover {
+  background-color:rgb(85, 202, 105);
+  position: relative;
+  top: -5px;
 }
